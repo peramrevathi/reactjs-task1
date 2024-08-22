@@ -1,56 +1,73 @@
 import React from 'react';
-import './App.css'
-import {Link} from 'react-router-dom'
-function VedicAstrologyAPI() {
-  
-  return (
-    <Link to = '/choosepackage'>
-    <section className="vedic-astrology-api">
-      <h3 className='title'>Vedic Astrology API</h3>
-      <div className="charts">
-        <div className="chart-group">
-          <h4>Shodashvarga Charts</h4>
-          <div className="chart-buttons">
-            <button>Lagna Chart (D1)</button>
-            <button>Hora Chart (D2)</button>
-            <button>Drekkana Chart (D3)</button>
-            <button>Chathurthamsha Chart (D4)</button>
-            <button>Panchamamsha Chart (D5)</button>
-            <button>Shashthamsha Chart (D6)</button>
-            <button>Saptamamsha Chart (D7)</button>
-            <button>Ashtamamsha Chart (D8)</button>
-            <button>Navamsha Chart (D9)</button>
-            <button>Dashamamsha Chart (D10)</button>
-            <button>Dwadashamsha Chart (D12)</button>
-            <button>Shodashvamsha Chart (D16)</button>
-            <button>imshamsha Chart (D20)</button>
-            <button>Chaturvimshamsha Chart (D24)</button>
-            <button>Bhamsha Chart (D27)</button>
-            <button>Trimshamsha Chart (D30)</button>
-            <button>Khavedamsha Chart (D40)</button>
-            <button>Akshavedamsha Chart (D45)</button>
-            <button>Shastiamsha Chart (D60)</button>
+import './App.css';
+import { Link, useNavigate } from 'react-router-dom';
 
+const charts = [
+  'Lagna Chart (D1)', 'Hora Chart (D2)', 'Drekkana Chart (D3)', 'Chathurthamsha Chart (D4)', 
+  'Panchamamsha Chart (D5)', 'Shashthamsha Chart (D6)', 'Saptamamsha Chart (D7)', 'Ashtamamsha Chart (D8)',
+  'Navamsha Chart (D9)', 'Dashamamsha Chart (D10)', 'Dwadashamsha Chart (D12)', 'Shodashvamsha Chart (D16)', 
+  'Imshamsha Chart (D20)', 'Chaturvimshamsha Chart (D24)', 'Bhamsha Chart (D27)', 'Trimshamsha Chart (D30)', 
+  'Khavedamsha Chart (D40)', 'Akshavedamsha Chart (D45)', 'Shastiamsha Chart (D60)'
+];
+
+const services = ['Bio Rhythm', 'Ephemeris', 'Planet Ingress', 'Moon Calendar'];
+
+function VedicAstrologyAPI() {
+  const navigate = useNavigate();
+
+  const handleChartClick = (chartName) => {
+    navigate(`/chart/${chartName.toLowerCase().replace(/\s+/g, '')}`);
+  };
+
+  const handleAdditionalServiceClick = (serviceName) => {
+    console.log(`Selected Service: ${serviceName}`);
+  };
+
+  const handleNextClick = () => {
+    console.log('Next clicked');
+    // Additional logic, e.g., navigation to another page
+  };
+
+  return (
+    <div className="vedic-api">
+      <section className="vedic-astrology-api">
+        <h3 className="title">Vedic Astrology API</h3>
+        <div className="charts">
+          <div className="chart-group">
+            <h4>Shodashvarga Charts</h4>
+            <div className="chart-buttons">
+              {charts.map(chart => (
+                <button
+                  key={chart}
+                  onClick={() => handleChartClick(chart)}
+                  aria-label={chart}
+                >
+                  {chart}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="additional-services">
+            {services.map(service => (
+              <div key={service}>
+                <h5>{service}</h5>
+                <button
+                  onClick={() => handleAdditionalServiceClick(service)}
+                  aria-label={service}
+                >
+                  {service}
+                </button>
+              </div>
+            ))}
           </div>
         </div>
-        <div className="additional-services">
-          <h5>Bio Rhythm</h5> 
-          <button>Bio Rhythm</button>
-          <h5>Ephemeris</h5>
-          <button>Ephemeris</button>
-          <h5>Planet Ingress</h5>
-          <button>Planet Ingress</button>
-          <h5>Moon Calendar</h5>
-          <button>Moon Calendar</button>
-        </div>
-        </div>
         <div className="next">
-        <button className="next-button">Next</button>
-      </div>
-     
-    </section>
-    </Link>
-    
+          <Link to="/VedicPlan">
+            <button className="next-button" onClick={handleNextClick}>Next</button>
+          </Link>
+        </div>
+      </section>
+    </div>
   );
 }
 
