@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css'
-
 const Section = () => {
   return (
     
@@ -13,7 +12,8 @@ const Section = () => {
       <div className="package">
         <h3>Western Astrology</h3>
         <p>Enhance your app with our Western Astrology API, offering precise ephemeris and Planet Ingress data. Choose the best package to provide accurate and insightful astrological services to your users seamlessly.</p>
-        <button className="choose-button">Choose Package</button>
+        <button className="choose-button" >Choose Package</button>
+      
       </div>
     </div>
   

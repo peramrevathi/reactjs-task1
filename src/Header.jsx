@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css'
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -7,10 +8,18 @@ function Header() {
       <h1>AstroChalit</h1>
       <nav>
         <ul>
+          <Link to='/Home'>
           <li>Home</li>
+          </Link>
+          <Link to='/Pricing'>
           <li>Pricing</li>
+          </Link>
+          <Link to='/Docs'>
           <li>Docs</li>
+          </Link>
+          <Link to='/Dashbord'>
           <li><button className="dashboard-button">Dashboard</button></li>
+          </Link>
         </ul >
       </nav> 
       

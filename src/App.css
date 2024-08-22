@@ -25,17 +25,15 @@ nav ul {
   list-style: none;
   display: flex;
   text-align: right;
-  height: 100px;
-  width: 100%;
-  gap: 5px;
   margin: 0;
-  padding: 10px;
+  padding: 0px;
 }
 
 nav li {
   display: inline;
-  margin-left: 90%;
+  margin-left: 110%;
 }
+
 
 .dashboard-button {
  
@@ -49,7 +47,8 @@ nav li {
 .section {
   padding: 50px 0;
   text-align: left;
-  margin-right: 50%;
+  margin-right: 10%;
+  margin-left: 1em;
 }
 
 .packages {

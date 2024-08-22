@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css'
+import {Link} from 'react-router-dom'
 function VedicAstrologyAPI() {
   
   return (
+    <Link to = '/choosepackage'>
     <section className="vedic-astrology-api">
       <h3 className='title'>Vedic Astrology API</h3>
       <div className="charts">
@@ -47,6 +49,7 @@ function VedicAstrologyAPI() {
       </div>
      
     </section>
+    </Link>
     
   );
 }
