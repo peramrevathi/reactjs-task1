@@ -7,18 +7,28 @@ const WesternAPI = () => {
     console.log(`${service} clicked`);
     // Additional logic, e.g., navigation or API calls, can be added here
   };
+  
 
   return (
     <div className="api-section">
     <div className="api-options">
       <h2>Western Astrology API</h2>
       <div className="api-selection">
-        <h3>Planet Aspects</h3><br/>
-        <button onClick={() => handleButtonClick('Planet Aspects')}>Planet Aspects</button>
+        <div className="api-item">
+        <h3 >Planet Aspects</h3>
+        </div>
+        <div className="item">
+        <button   onClick={() => handleButtonClick('Planet Aspects')}>Planet Aspects</button>
+        </div>
+        <div className="api-item">
         <h3>Ephemeris</h3>
-        <button onClick={() => handleButtonClick('Ephemeris')}>Ephemeris</button>
-        <h3>Planet Ingress</h3>
-        <button onClick={() => handleButtonClick('Planet Ingress')}>Planet Ingress</button>
+        </div>
+        <div className="item"><button  onClick={() => handleButtonClick('Ephemeris')}>Ephemeris</button></div>
+        <div className="api-item"> 
+        <h3 >Planet Ingress</h3>
+        </div>
+        <div className="item"><button  onClick={() => handleButtonClick('Planet Ingress')}>Planet Ingress</button></div>
+        
       </div>
       </div>
       <div className="next">

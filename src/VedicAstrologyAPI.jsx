@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const charts = [
   'Lagna Chart (D1)', 'Hora Chart (D2)', 'Drekkana Chart (D3)', 'Chathurthamsha Chart (D4)', 
@@ -21,11 +21,6 @@ function VedicAstrologyAPI() {
 
   const handleAdditionalServiceClick = (serviceName) => {
     console.log(`Selected Service: ${serviceName}`);
-  };
-
-  const handleNextClick = () => {
-    console.log('Next clicked');
-    // Additional logic, e.g., navigation to another page
   };
 
   return (
@@ -53,19 +48,14 @@ function VedicAstrologyAPI() {
                 <h5>{service}</h5>
                 <button
                   onClick={() => handleAdditionalServiceClick(service)}
-                  aria-label={service}
-                >
+                  aria-label={service}>
                   {service}
                 </button>
               </div>
             ))}
           </div>
         </div>
-        <div className="next">
-          <Link to="/VedicPlan">
-            <button className="next-button" onClick={handleNextClick}>Next</button>
-          </Link>
-        </div>
+       
       </section>
     </div>
   );

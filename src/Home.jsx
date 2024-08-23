@@ -1,24 +1,18 @@
-import React from 'react'
-import {Routes, Route} from 'react-router-dom'
-import './App.css'
-import Header from './Header';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Section from './Section';
-import VedicPlan from './VedicPlan';
+import CostomPlan from './CostomPlan';// Adjust the import based on your component name
+
 const Home = () => {
   return (
-    <div>
-       <Header/>
-       <Section/>
+    <Router>
       <Routes>
-      {/* <Route path='/choose package' element ={<VedicAstrologyAPI/>}/> */}
-      {/* <Route path='/vedicAstrologyAPI' element ={<Section/>}/> */}
-      {/* <Route path="/" element={<VedicAstrologyAPI />} /> */}
-        <Route path="/vedicplan" element={<VedicPlan />} />
+        <Route path="/" element={<Section />} />
+        <Route path="/CustomPlan" element={<CostomPlan />} /> {/* Check the path spelling */}
       </Routes>
-     
-     
-    </div>
-  )
+    </Router>
+  );
 }
 
-export default Home
+
+export default Home;

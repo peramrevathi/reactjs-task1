@@ -1,7 +1,11 @@
 import React ,{useState} from 'react'
 import './App.css'
+import { Link } from 'react-router-dom';
+
 import VedicAstrologyAPI from './VedicAstrologyAPI';
 import WesternAPI from './WesternAPI';
+import VedicPlan from './VedicPlan';
+import Header from './Header';
 
 const Section = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -14,11 +18,10 @@ const Section = () => {
     setIsVisible(false);
   };
   
-  const backgroundColor= isVisible ? '#EB9200' : 'white'
-  const color= isVisible ? 'white' : '#EB9200'
 
   return (
-    
+    <div className="section">
+        <Header />
     <div className="packages">
       <div className="package">
         <h3>Vedic Astrology</h3>
@@ -35,12 +38,18 @@ const Section = () => {
             backgroundColor: isVisible ? 'white' : '#EB9200',
             color: isVisible ? '#EB9200' : 'white',
           }} className="choose-package-button" onClick={showWestern} >Choose Package</button>
-      
       </div>
-      <div>
+      </div>
+      <div className="api">
       {isVisible ? <VedicAstrologyAPI /> : <WesternAPI />}
       </div>
-    </div>
+      <VedicPlan />
+      <div className="next button">
+          <Link to="/CustomPlan">
+            <button className="next-button" >Next</button>
+          </Link>
+        </div>
+      </div>
   
   )
 }

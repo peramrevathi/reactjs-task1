@@ -1,58 +1,41 @@
-import React from 'react';
-
+import React , {useState} from 'react';
+import {Link} from 'react-router-dom'
+import MonthlyPlan from './MonthlyPlan';
+import YearlyPlan from './YearlyPlan';
 const VedicPlan = () => {
-  // Array of plan objects
-  const plans = [
-    {
-      name: 'Basic Vedic Plan',
-      amount: '$500',
-      duration: '15 days',
-      apiRequest: '100/month',
-    },
-    {
-      name: 'Standard Vedic Plan',
-      amount: '$1000',
-      duration: '30 days',
-      apiRequest: '200/month',
-    },
-    {
-      name: 'Premium Vedic Plan',
-      amount: '$1500',
-      duration: '30 days',
-      apiRequest: '300/month',
-    },
-  ];
 
+    const [isVisible, setIsVisible] = useState(true);
+  
+    const showMonthly = () => {
+      setIsVisible(true);
+    };
+  
+    const showYearly = () => {
+      setIsVisible(false);
+    };
   return (
-    <div>
       <div>
       <section className="plan-section">
+        <div className="api-plans">
         <h2>Choose Plan</h2>
         <div className="plan-options">
           <div className="plan-option">
-            <button>Monthly</button>
+          <button  style={{
+            backgroundColor: isVisible ? '#EB9200':'white'  ,
+            color: isVisible ? 'white':'#EB9200',
+          }} className="plan-button" onClick={showMonthly} >Monthly</button>
           </div>
-          <div className="plan-option">
-            <button>Yearly</button>
+          <button  style={{
+            backgroundColor: isVisible ? 'white' : '#EB9200',
+            color: isVisible ? '#EB9200' : 'white',
+          }} className="plan-button" onClick={showYearly} >Yearly</button>
           </div>
-        </div> 
-    
-        <div className="plans">
-          <h3>pay for just 10months and get 12months access</h3>
-          {plans.map((plan, index) => (
-            <div key={index} className={`plan-card ${plan.name.toLowerCase().replace(/\s+/g, '-')}`}>
-              <h3>{plan.name}</h3>
-              <p>Amount: {plan.amount}</p>
-              <p>Duration: {plan.duration}</p>
-              <p>API Request: {plan.apiRequest}</p>
-            </div>
-          ))}
         </div>
-      </section>
-      <div className="next">
-        <button className="next-button">Next</button>
+        <div className="custom">
+       <h3>Looking for a Custom Plan? <Link to='/CostomPlan'> Click Here</Link></h3>
       </div>
-    </div>
+      </section>
+      {isVisible ? <MonthlyPlan /> : <YearlyPlan />}
     </div>
   );
 };
