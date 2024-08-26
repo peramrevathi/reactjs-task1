@@ -1,13 +1,13 @@
 import React ,{useState} from 'react'
-import './App.css'
+import '../App.css'
 import { Link } from 'react-router-dom';
 
 import VedicAstrologyAPI from './VedicAstrologyAPI';
 import WesternAPI from './WesternAPI';
 import VedicPlan from './VedicPlan';
-import Header from './Header';
+import Header from '../Header';
 
-const Section = () => {
+const Pricing = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const showVedic = () => {
@@ -54,4 +54,4 @@ const Section = () => {
   )
 }
 
-export default Section
+export default Pricing

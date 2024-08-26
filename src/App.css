@@ -13,34 +13,44 @@
   min-height: 20vh; /* Ensures the background covers the full height of the viewport */
   color: white; /* This will make text white to contrast against the dark background */
   display: flex;
+  width: 1490px;
+  height: 250px;
+  right: 10%;
+
 }
 
 
 .app-header h1 {
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-left:50px;
+  margin-right: 100px;
 }
 
 .intro {
-  flex: 1; /* Allows intro to take up available space */
-  max-width: 70%; /* Limits the width of the intro section */
+ margin-top: 3%;
+margin-right: 20%;
+width: 621px;
+height: 166px;
+top: 197px;
+left: 81px;
+gap: 62px;
+
 }
 
 .intro h1 {
-  font-size: 18px;
+  font-size: 24px;
   color: white;
   margin-bottom: 10px;
   margin-top: 80px;
-  margin-right: 600px;
+ 
  
 }
 
 .intro p {
-  font-size: 12px;
+  font-size: 14px;
   color: white;
-  margin-right: 500px;
+  
 }
 
 nav ul {
@@ -100,15 +110,21 @@ nav ul li:hover {
   width: 25%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  width: 400px;
 }
 
 .package h3 {
   margin-top: 0;
 }
+.package p{
+  font-family: Inter;
+  font-size: 15px;
+}
 
 
 .choose-package-button {
   color:white;
+  margin-top: 10px;
   border-color: #ff9800;
   padding: 10px 20px;
   cursor: pointer;
@@ -119,7 +135,17 @@ nav ul li:hover {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  margin-left: 20%;
+}
+.title{
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: black;
+  display: flex;
+  align-items: center;
   margin-left: 25%;
+
 }
 .vedic-astrology-api {
   display: flex;
@@ -129,18 +155,8 @@ nav ul li:hover {
   background-color: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin-right: 50px;
-  margin: 0 auto;
+  width: 1000px;
   flex:1;
-}
-
-.vedic-astrology-api .title {
-  font-size: 28px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  color: black;
-
 }
 
 .charts {
@@ -166,11 +182,15 @@ nav ul li:hover {
 .chart-buttons button {
   padding: 10px 15px;
   background-color:white;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
+  border-radius: 2px;
+  color: #6F6F6F;
   cursor: pointer;
+  width: 600px;
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 24px;
+  border-color: #6F6F6F;
+
   flex: 1 1 calc(25% - 20px); /* Four buttons per row, with space between */
   max-width: calc(25% - 20px); /* Ensure the button does not exceed 1/4th of the container width */
 }
@@ -178,11 +198,17 @@ nav ul li:hover {
 
 .chart-buttons button:hover {
   background-color: white;
+  border-color: black;
   transform: scale(1.05);
 }
 
 .additional-services {
   margin-top: 20px;
+  display: flex;
+  flex-direction:row;
+  gap: 20px; 
+  margin-right: 50%;
+ 
 }
 
 .additional-services h5 {
@@ -193,20 +219,20 @@ nav ul li:hover {
 
 .additional-services button {
   padding: 10px 15px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
+  background-color:white;
+  border-radius: 2px;
+  color: #6F6F6F;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-bottom: 10px;
-  display: block;
-  width: 100%;
+  width: 200px;
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 24px;
+  border-color: #6F6F6F;
 }
 
 .additional-services button:hover {
   background-color: white;
+  border-color:black;
   transform: scale(1.05);
 }
 
@@ -235,67 +261,74 @@ nav ul li:hover {
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  max-width: 800px;
+  max-width: 60%;
+  margin-right: 50%;
   margin: 0 auto;
-  margin-right: 25%;
   margin-top: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  flex:1;
 
 }
-
-/* Container for the API options */
-.api-options {
+.heading{
+  font-size: 28px;
   margin-bottom: 20px;
-}
-
-/* Title styling */
-.api-options h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-top: 20px;
   color: black;
-}
-
-/* Container for API selection items */
-.api-selection {
-  display: flex;
-  flex-direction:row;
-  gap: 20px; /* Adds space between each item */
-  
-}
-
-/* Flex container for each API item to align heading and button */
-.api-item,
-.item {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Aligns heading and button on the same line */
+  margin-left: 25%;
 }
 
-/* Styling for h3 tags */
-.api-item h3 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500;
-  color: black;
-  flex: 1; /* Allows text to take up available space */
+.api-options {
+  margin-bottom: 20px;
+
+ 
 }
 
-/* Styling for buttons */
-.item button {
-  padding: 8px 16px;
-  font-size: 20px;
-  background-color: rgb(243, 234, 234);
+
+
+.api-selection {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+  gap: 20px; 
+  margin-right: 50%;
+  max-width: 1250px;
+  width: 1400px;
+   gap: 54px;
+
+}
+
+.api-selection h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
   color: black;
-  border: none;
+}
+
+.api-selection button {
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
   border-radius: 4px;
+  border-color:#6F6F6F ;
+  color: #6F6F6F;
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 24px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 10px;
+  width: 250px;
+  display: block;
 }
 
 /* Button hover effect */
-.item button:hover {
+.api-selection:hover {
   background-color: white;
+  border-color: black;
+  transform: scale(1.05);
 }
 
 
@@ -341,15 +374,12 @@ nav ul li:hover {
 }
 
 .plan-button {
-  background-color: #f7a800;
-  color: #fff;
-  border: none;
+  color:white;
+  border-color: #ff9800;
   padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
   cursor: pointer;
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.1); ;
-  transition: background-color 0.3s ease;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 .plan-option button:hover {
@@ -366,19 +396,23 @@ nav ul li:hover {
 }
 .plans{
   display: flex;
-  max-width: 800px;
+  max-width: 1000px;
   max-height: 35%;
   margin: 0 auto;
   padding: 20px;
   background-color: #f4f4f4;
+  
 }
 
 .cards{
   display: flex;
   align-items: center;
   margin-top: 50px;
-  margin-left: 15%;
-  width: 800px;
+  margin-right: 25%;
+
+
+
+
 }
 .plan-card {
   background-color: #fff;
@@ -386,10 +420,15 @@ nav ul li:hover {
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
-  width: calc(100% - 80px);
-  height: calc(100% -80px);
+  width: calc(100% - 100px);
+  height: calc(100% -100px);
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  width: 250px;
+  height: 200px;
+  top: 288px;
+  left: 57px;
+   gap: 41px;
+   transition: transform 0.3s ease;
   flex: 1;
 }
 
@@ -399,13 +438,20 @@ nav ul li:hover {
 }
 
 .plan-card h3 {
-  font-size: 24px;
   margin-bottom: 10px;
   color: black;
+  font-family: Inter;
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 30px;
+  text-align: center;
+
 }
 
 .plan-card p {
+  font-family: Inter;
   font-size: 16px;
+  line-height: 30px;
   color: black;
   margin-bottom: 8px;
 }
@@ -414,6 +460,10 @@ nav ul li:hover {
   align-items: center;
   margin-top: 20px;
   margin-left: 25%;
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 30px;
+  text-align: center;
 }
 
 .next {
@@ -435,22 +485,10 @@ nav ul li:hover {
 .next-button:hover {
   background-color: #f7a800;
 }
-/* CostomPlan.css */
 
 
-.Header {
-  background-color: #ff9800;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-bottom: 20px;
-}
 
-.Header h1 {
-  margin: 0;
-  font-size: 36px;
-  margin-right: 100%;
-}
+
 .tittle h2{
   margin-left: 40%;
 }
@@ -488,6 +526,12 @@ nav ul li:hover {
   color:black;
   font-size: 16px;
 }
+.Vedic-api{
+  margin-left: 20%;
+}
+.Western-api{
+  margin-left: 15%;
+}
 .subscribe-button {
   padding: 10px 20px;
   background-color: #ff9800;
@@ -495,7 +539,7 @@ nav ul li:hover {
   border: none;
   border-radius: 5px;
   margin-left: 45%;
-  margin-top: 10px;
+  margin-top: 20px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
@@ -503,4 +547,88 @@ nav ul li:hover {
 
 .subscribe-button:hover {
   background-color: #ff9800;
+}
+* Container styling */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 0, 0.914);
+  padding: 20px;
+}
+
+
+.contact-form form {
+  background-color: #fcf7d4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  margin-top:20px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  margin-left: 35%;
+  box-shadow: 0 4px 8px rgb(30, 30, 29);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.contact-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+
+.contact-form button[type="submit"] {
+  background-color: #f9a825; 
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #e68900;
+}
+
+@media (max-width: 500px) {
+  .contact-form form {
+    width: 90%;
+  }
 }

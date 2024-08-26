@@ -1,14 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Section from './Section';
-import CostomPlan from './CostomPlan';// Adjust the import based on your component name
+import Pricing from './Pricing/Pricing';
+import CostomPlan from './Pricing/CostomPlan';
+import CustomPlanform from './Pricing/CustomPlanform';
+import Landing from './Landing';
+import YearlyVedicPlan from './Pricing/YearlyVedicPlan';
 
 const Home = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Section />} />
-        <Route path="/CustomPlan" element={<CostomPlan />} /> {/* Check the path spelling */}
+        <Route path="/" element={<Landing />} />
+        <Route path="/Pricing" element={<Pricing />} />
+        <Route path="/CustomPlan" element={<CostomPlan />} />
+        <Route path="/CustomPlanform" element={<CustomPlanform />} />
+        <Route path="/YearlyVedicPlan" element={<YearlyVedicPlan/>} />
       </Routes>
     </Router>
   );

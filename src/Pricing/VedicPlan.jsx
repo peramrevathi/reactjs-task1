@@ -2,6 +2,7 @@ import React , {useState} from 'react';
 import {Link} from 'react-router-dom'
 import MonthlyPlan from './MonthlyPlan';
 import YearlyPlan from './YearlyPlan';
+ 
 const VedicPlan = () => {
 
     const [isVisible, setIsVisible] = useState(true);
@@ -32,7 +33,7 @@ const VedicPlan = () => {
           </div>
         </div>
         <div className="custom">
-       <h3>Looking for a Custom Plan? <Link to='/CostomPlan'> Click Here</Link></h3>
+       <h3>Looking for a Custom Plan? <Link to='/CustomPlanform'> Click Here</Link></h3>
       </div>
       </section>
       {isVisible ? <MonthlyPlan /> : <YearlyPlan />}

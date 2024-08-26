@@ -28,7 +28,7 @@ const YearlyPlan = () => {
     <div className="cards">
     {plans.map((plan, index) => (
       <div key={index} className={`plan-card ${plan.name.toLowerCase().replace(/\s+/g, '-')}`}>
-        <h3>{plan.name}</h3>
+        <h4>{plan.name}</h4>
         <p>Amount: {plan.amount}</p>
         <p>Duration: {plan.duration}</p>
         <p>API Request: {plan.apiRequest}</p>
