@@ -1,0 +1,188 @@
+
+.body{
+  width: 1355px;
+height: 1150px;
+left: 85px;
+
+
+}
+.container {
+    margin-left: 240px; /* Sidebar width */
+    padding: 16px;
+  }
+  
+  .subscription-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  }
+  .subscription-status h1 {
+width: 246px;
+height: 34px;
+top: 109px;
+left: 174px;
+font-family: Inter;
+font-size: 28px;
+font-weight: 700;
+line-height: 33.89px;
+text-align: left;
+  }
+
+  
+  .subscription-status h2 {
+    color: #03A73B;
+    width: 88px;
+    height: 34px;
+    top: 112px;
+    left: 925px;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.89px;
+    text-align: left;
+  
+  
+  }
+  
+.subscription-status img {
+width: 200px;
+height: 200px;
+top: 64px;
+left: 1068px;
+bottom: 80px;
+border-radius: 5px 0px 0px 0px;
+margin-top: 20%;
+
+  } 
+  .description {
+    color:  #525252;
+    width: 847px;
+    height: 78px;
+    top: 174px;
+    left: 174px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    
+  }
+  .plan-details{
+ width: Hug (1,160px)px;
+height: Hug (219px)px;
+top: 329px;
+left: 174px;
+gap: 157px;
+opacity: 0px;
+
+  }
+  .plan-details,
+  .api-access {
+
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+  }
+  
+  .plan-details {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .left-column,
+  .right-column {
+    flex: 1;
+  }
+  .right-column User{
+    width: Fixed (606px)px;
+    height: Hug (31px)px;
+    top: 17px;
+    left: 24px;
+    justify-content: space-between;
+    
+  }
+  
+  .left-column h3,
+  .right-column h3 {
+    margin-bottom: 16px;
+    width: 350px;
+    height: 30px;
+    color: #E46900;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+
+
+
+  }
+  
+  .left-column strong,
+  .right-column strong{
+    width: 350px;
+    height: 30px;
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color:black
+
+  }
+  .left-column p,
+  .right-column p {
+    width: 350px;
+    height: 30px;
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: left;
+    color: #525252;
+
+  }
+  .right-column h3{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    
+  }
+  
+.api-access{
+  width: 1013px;
+height: 393px;
+border: 1px 0px 0px 0px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  border-color: none;
+
+}
+.User{
+width: Fixed (606px)px;
+height: Hug (31px)px;
+top: 17px;
+left: 30px;
+justify-content: space-between;
+width: 600px;
+height: 65px;
+border-radius: 5px 0px 0px 0px;
+background-color: #FFF1E4;
+margin-bottom: 2%;
+}
+.API{
+  width: Fixed (606px)px;
+height: Hug (31px)px;
+top: 17px;
+left: 30px;
+justify-content: space-between;
+width: 600px;
+height: 65px;
+border-radius: 5px 0px 0px 0px;
+background-color: #FFF1E4;
+}
