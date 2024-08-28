@@ -13,7 +13,7 @@ const BasicMonthlyvedic = () => {
   };
 
   return (
-    <div className="container">
+    <div className="Monthly-container">
       <IconButton sx={{width: '33px',height: '33px',top: '19px',left: '1000px',color:'black'}}>
      <AccountCircleOutlinedIcon />
      </IconButton>

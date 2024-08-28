@@ -1,0 +1,68 @@
+.body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+  }
+  .header {
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    background-image: url('../assests/image 1.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    display: flex;
+    width: 1520px;
+    height: 700px;
+    top: -6402px;
+    left: 17495px;
+    
+  }
+ .header h1{
+  font-family: Katibeh;
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 64.8px;
+  text-align: left;
+
+ }
+ nav ul {
+  list-style: none;
+  display: flex;
+  justify-content:flex-end;
+  margin-top:30px;
+  margin-left: 20px;
+  padding: 0;
+  color: white;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+ 
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  color: #f0f0f0;
+}
+.Login-button {
+  padding: 8px 15px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.Login-button:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,110 @@
+/* App.css */
+
+.signup-container {
+    height: 850px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    background: linear-gradient(295.62deg, #FFFFFF 11.7%, #FFEFDC 88.3%);
+
+    
+  }
+  
+  .signup-logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .signup-logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .signup-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .signup-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .signup-google-btn {
+    width: 243px;
+    height: 40px;
+    top: 154px;
+    left: 27px;
+    border-radius: 4px 0px 0px 0px;
+    background: #FFFFFF;
+    color: black;
+    font-family: Inter;
+    font-size: 16px;
+  }
+  
+  .signup-google-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .signup-divider-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .signup-divider {
+    flex: 1;
+    border: 1px solid #ddd;
+  }
+  
+  .signup-or-text {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .signup-textfield-heading {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;    
+    margin-bottom: 8px;
+    margin-right: 70%;
+  }
+  
+  .signup-text-field {
+    margin-bottom: 15px;
+  }
+  
+  .signup-button {
+    background: linear-gradient(355.17deg, #EB9200 3.88%, #FFB02F 96.11%);
+    color: white;
+    padding: 10px;
+    top: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .signup-login-container {
+    margin-top: 50px;
+  }
+  
+  .signup-login-link {
+    color: #00576C;
+
+    text-decoration: none;
+  }
+  
+  .signup-login-link:hover {
+    text-decoration: underline;
+  }
+  
