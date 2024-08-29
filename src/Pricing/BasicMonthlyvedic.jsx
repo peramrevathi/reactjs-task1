@@ -5,6 +5,7 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import {  IconButton } from '@mui/material';
 import VedicAstrologyAPI from './VedicAstrologyAPI';
+import Sidebar from './Sidebar';
 
 
 const BasicMonthlyvedic = () => {
@@ -13,15 +14,19 @@ const BasicMonthlyvedic = () => {
   };
 
   return (
+    <div style={{display:'flex'}} >
+      <Sidebar />
     <div className="Monthly-container">
-      <IconButton sx={{width: '33px',height: '33px',top: '19px',left: '1000px',color:'black'}}>
-     <AccountCircleOutlinedIcon />
+      <IconButton sx={{width: '33px',height: '33px',top: '19px',left: '500px',color:'black'}}>
+     <AccountCircleOutlinedIcon  sx={{fontSize:'3rem'}}/>
      </IconButton>
       <div className="subscription-status">
         <h1>Your Subscription</h1>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <h2>Active</h2>
+          <div>
           <img src={Image} alt=" Image" />
+          </div>
         </div>
       </div>
 
@@ -71,11 +76,11 @@ const BasicMonthlyvedic = () => {
         </div>
       </div>
 
-      {/* APIs Access */}
-      <h3 style={{ marginBottom: '10px' }}>The APIs which you have access for:</h3>
+      <h2 style={{ marginBottom: '10px' , marginRight:'65%' }}>The APIs which you have access for:</h2>
       <div className="api-access">
         <VedicAstrologyAPI/>
       </div>
+    </div>
     </div>
   );
 };

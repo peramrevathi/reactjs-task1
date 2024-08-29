@@ -12,7 +12,7 @@ const Loginpage = () => {
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
   return (
-    <div className="container">
+    <div className="login-container">
       <div className="logo-container">
         <img src={astroLogo} alt="Logo" className="logo" />
       </div>

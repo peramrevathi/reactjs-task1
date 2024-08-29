@@ -28,7 +28,7 @@ const MonthlyPlan = () => {
       <div className="cards">
         {plans.map((plan, index) => (
           <Link
-            to={`/plans/${plan.name.toLowerCase().replace(/\s+/g, '-')}`}  style={{textDecoration:'none'}}
+          to={`/sidebar/${plan.name.toLowerCase().replace(/\s+/g, '-')}`} style={{textDecoration:'none'}}
             key={index}
             className={`plan-card ${plan.name.toLowerCase().replace(/\s+/g, '-')}`}
           >

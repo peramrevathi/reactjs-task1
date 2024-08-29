@@ -6,12 +6,14 @@ import CustomPlanform from './Pricing/CustomPlanform';
 import Landing from './Landing';
 import YearlyVedicPlan from './Pricing/YearlyVedicPlan';
 import MonthlyPlan from './Pricing/MonthlyPlan';
-import Plans from './Pricing/Plans';
 import Loginpage from './Login/Loginpage';
 import SignUp from './Login/SignUp';
 import ForgotPassword from './Login/ForgotPassword';
 import ResetPassword from './Login/ResetPassword';
-
+import Sidebar from './Pricing/Sidebar';
+import BasicMonthlyvedic from './Pricing/BasicMonthlyvedic';
+import BasicMonthlyPayment from './Pricing/BasicMonthlyPayment';
+import Charts from './Pricing/Charts';
 
 const Home = () => {
   return (
@@ -28,8 +30,12 @@ const Home = () => {
         <Route path="/CustomPlan" element={<CostomPlan />} />
         <Route path="/CustomPlanform" element={<CustomPlanform />} />
         <Route path="/YearlyVedicPlan" element={<YearlyVedicPlan/>} />
-        <Route path="/" element={<MonthlyPlan />} />
-        <Route path="/plans/basic-vedic-plan" element={<Plans />} /> 
+        <Route path="/" element={<MonthlyPlan />} /> 
+        <Route path="/sidebar/:planName" element={<Sidebar />} />
+        <Route path="/" element={<Sidebar />}/>
+        <Route path="/BasicMonthlyvedic" element={<BasicMonthlyvedic/>}/>
+        <Route path="/BasicMonthlyPayment" element={<BasicMonthlyPayment/>}/>
+        <Route path="/Charts" element={<Charts />}/>
       </Routes>
     </Router>
   );
