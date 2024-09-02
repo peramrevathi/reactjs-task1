@@ -62,7 +62,7 @@ const BasicMonthlyPayment = () => {
     <Sidebar />
     <div className="payment-history-container">
         <IconButton sx={{width: '33px',height: '33px',top: '19px',left: '1000px',color:'black'}}>
-     <AccountCircleOutlinedIcon />
+     <AccountCircleOutlinedIcon sx={{fontSize:'5rem'}} />
      </IconButton>
       <div className="go-back">
         <ArrowBackIcon className="back-icon" />

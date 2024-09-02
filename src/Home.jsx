@@ -13,7 +13,7 @@ import ResetPassword from './Login/ResetPassword';
 import Sidebar from './Pricing/Sidebar';
 import BasicMonthlyvedic from './Pricing/BasicMonthlyvedic';
 import BasicMonthlyPayment from './Pricing/BasicMonthlyPayment';
-import Charts from './Pricing/Charts';
+import Charts from './Pricing/Charts/Charts';
 
 const Home = () => {
   return (

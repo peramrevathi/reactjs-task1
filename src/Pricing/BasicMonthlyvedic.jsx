@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState}from 'react';
 import './Basicvedic.css'; // Import the CSS file
 import Image from '../assests/image 2.png'; // Adjust the path to your image file
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
@@ -6,20 +6,45 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import {  IconButton } from '@mui/material';
 import VedicAstrologyAPI from './VedicAstrologyAPI';
 import Sidebar from './Sidebar';
+import UserProfileModal from './UserProfilemodel';
 
 
 const BasicMonthlyvedic = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text);
+  };
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const user = {
+    name: 'Poornima Sri',
+    gender: 'Female',
+    email: 'poornima@gmail.com',
+    mobile: '+98745***53',
+    plans: ['Medium Premium Plan', 'Western Basic Plan'],
+    daysLeft: 10
   };
 
   return (
     <div style={{display:'flex'}} >
       <Sidebar />
     <div className="Monthly-container">
-      <IconButton sx={{width: '33px',height: '33px',top: '19px',left: '500px',color:'black'}}>
+      <IconButton sx={{width: '33px',height: '33px',top: '19px',left: '500px',color:'black'}}   onClick={handleOpenModal}  >
      <AccountCircleOutlinedIcon  sx={{fontSize:'3rem'}}/>
      </IconButton>
+     <UserProfileModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          user={user} 
+        />
       <div className="subscription-status">
         <h1>Your Subscription</h1>
         <div style={{ display: 'flex', alignItems: 'center' }}>
